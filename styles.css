@@ -1,0 +1,12 @@
+body {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.jumbotron {
+  font-family: 'Nunito Sans', sans-serif;
+  text-align: center;
+}
+
+#currency-form {
+  margin: 20px auto;
+}

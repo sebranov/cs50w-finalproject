@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% subtitle block %}Current Exchange Rate{% endblock%}
+
+{% block body %}
+  <div class="container">
+    <form action="#" method="post" name="curreny-converter" id="currency-form">
+      <legend>Current Currency Exchange</legend>
+      <br>
+      <select name="baseCurrency" id="base-currency-dropdown"></select>
+      <input id="currency-amount" autocomplete="off" autofocus placeholder="Amount" type="number">
+      <select name="targetCurrency" id="target-currency-dropdown"></select>
+      <br>
+      <button type="submit" id="submit">Get Exchange Rate</button>
+    </form>
+    <br>
+    <div id="result"></div>
+  </div>
+
+  <div class="container">
+    <select id="locality-dropdown" name="locality"></select>
+  </div>
+  <!-- local script -->
+  <script src="../static/current.js"></script>
+{% endblock %}
